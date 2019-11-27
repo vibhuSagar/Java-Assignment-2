@@ -1,3 +1,5 @@
+/* Reading Employee Information Using Default and Parameterized Constructors */
+
 public class Employee{
     
     String name;
@@ -6,9 +8,9 @@ public class Employee{
     String city;
     double salary;
     
-    Employee(){}
+    Employee(){}    //Default Constructor
     
-    Employee(String name,int age,String dob,String city,double Salary){
+    Employee(String name,int age,String dob,String city,double Salary){         //Parameterize Constructor
         
         this.name=name;
         this.age=age;
@@ -17,28 +19,30 @@ public class Employee{
         this.salary=salary;
     }
     
-    public void setName(String name){
+    public void setName(String name){       //Sets name of an employee
         this.name=name;
     }
     
-    public void setAge(int age){
+    public void setAge(int age){        //Sets age of an employee
         this.age=age;
     }
     
-    public void setDob(String dob){
+    public void setDob(String dob){        //Sets dob of an employee
         this.dob=dob;
     }
     
-    public void setCity(String city){
+    public void setCity(String city){       //Sets city of an employee
         this.city=city;
     }
     
-    public void setSalary(double salary){
+    public void setSalary(double salary){       //Sets salary of an employee
         this.salary=salary;
     }
     
     public static void main(String args[]){
-    
+   
+    /* Creating objects using default constructor */
+        
     Employee emp1 = new Employee();
     emp1.setName("abc");
     emp1.setAge(22);
@@ -74,6 +78,9 @@ public class Employee{
     emp5.setCity("Kolkata");
     emp5.setSalary(30000);
     
+        
+    /* Creating objects using parameterized constructor */
+        
     Employee empl1 = new Employee("klm",23,"12-11-1996","Jammu",45000);
     
     Employee empl2 = new Employee("khg",24,"18-10-1995","Jaipur",25000);
